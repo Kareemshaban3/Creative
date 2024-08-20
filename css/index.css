@@ -1,0 +1,946 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html::-webkit-scrollbar {
+    background-color: #000000;
+}
+html::-webkit-scrollbar-thumb {
+    background-color: rgb(106, 227, 191);
+    border-radius: 10px;
+}
+html::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+/* start Navbar */
+#navbar .navbar{
+    background-color: rgba(0, 0, 0, 0.899);
+} 
+#navbar a h2{
+    color: rgb(106, 227, 191);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    position: relative;
+    font-size: 45px;
+}
+#navbar a p{
+    color: white;
+    position: absolute;
+    bottom: -3px;
+    left: 140px;
+    font-size: 7px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+}
+@media(max-width:550px){
+    #navbar a p{
+        left: 40px;
+    }
+}
+
+
+@media(min-width:764px){
+    #navbar a p{
+        left: 70px;
+    }
+}
+
+@media(min-width:853px){
+    #navbar a p{
+        left: 110px;
+    }
+}
+@media(min-width:912px){
+    #navbar a p{
+        left: 140px;
+    }
+}
+
+@media(min-width:1022px){
+    #navbar a p{
+        left: 75px;
+    }
+}
+@media(min-width:1440px){
+    #navbar a p{
+        left: 140px;
+    }
+}
+
+@media(min-width:2560px){
+    #navbar a p{
+        left: 666px;
+    }
+}
+
+
+
+#navbar .navbar-toggler{
+    color: rgb(106, 227, 191);
+}
+#navbar .nav-item a{
+    color: white;
+    margin-right: 8px;
+}
+#navbar li a{
+    position: relative;
+}
+#navbar .nav-item a::before{
+    content: "";
+    position:absolute ;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(106, 227, 191); ;
+    height: 1px;
+    transition: ease .3s;
+    transform: scaleX(0);
+}
+#navbar .nav-item a:hover::before{
+    transform: scaleX(1);
+}
+
+
+#navbar .Search{
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+#navbar .nav-item a:hover{
+    color: rgb(106, 227, 191);
+}
+
+/* Evd navbar */
+
+/* start Banner */
+
+#liner {
+    background-image: url(portrait.png);
+    background-position: 118%;
+    background-repeat: no-repeat;
+    background-position-y: 57%;
+}
+#Banner {
+    width: 100%;
+    background: linear-gradient(271deg, rgb(146 249 218 / 19%) 0%, #000000 62%);
+    padding-bottom: 120px;
+}
+@media(min-width:845px) and (max-width:990px) {
+    #liner {
+        background-position: 170%;
+        background-position-y: 50%;
+    
+    }
+}
+
+@media (min-width: 355px) and (max-width: 660px) {
+    #liner {
+        background-position: 1%;
+        background-position-y: 72%;
+    }
+}
+@media (min-width: 660px) and (max-width: 767px) {
+    #liner {
+        background-position: -145%;
+        background-position-y: 55%;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 844px) {
+    #liner {
+        background-position: 130px;
+        background-position-y: 55%;
+    }
+}
+#Banner h6{
+    padding-top: 100px;
+    color: rgb(106, 227, 191);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'FontAwesome';
+    font-size: 10px;
+}
+#Banner h2{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    color: white;
+    font-size: 60px;
+    word-spacing: 7px;
+    position: relative;
+}
+#Banner h2 b::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(106, 227, 191);
+    height: 3px;
+    bottom: -12px;
+    left: 0;
+    right: 0px;
+    width: 60px;
+}
+#Banner h2 span{
+    color: rgb(106, 227, 191);
+}
+#Banner p{
+    padding-top: 30px;
+    color: rgba(240, 248, 255, 0.549);
+}
+#Banner i{
+    font-size: 60px;
+    padding-top: 30px;
+    cursor: pointer;
+}
+#Banner p span{
+    margin-left: 10px;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    letter-spacing: 2px;
+
+}
+#Banner p b{
+    color:  rgb(106, 227, 191);
+    margin-left: 70px;  
+    position: relative;
+}
+#Banner p b::before{
+    content: "";
+    position: absolute;
+    background-color:  rgb(106, 227, 191);
+    height: 2px;
+    top: -15px;
+    right: 0;
+    left: 0;
+}
+#Banner img{
+margin-top: -115px;
+
+}
+/* End Banner */
+
+
+/* start Service */
+#Service{
+    background-color: #000000;
+    width: 100%;
+    padding: 100px 0px;
+}
+#Service .col-md-6 h6{
+    color: rgb(106, 227, 191);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 16px;
+}
+#Service .col-md-6 h2{
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 50px;
+    word-spacing: 10px;
+    position: relative;
+}
+#Service .col-md-6 h2::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    bottom: -15px;
+    right: 0;
+    left: 0;
+    width: 100px;
+    background-color:  rgb(106, 227, 191);;
+}
+#Service .col-md-6 h2 span{
+    color: rgb(106, 227, 191);
+}
+#Service .col-md-6 p{
+    color: rgba(240, 248, 255, 0.681);
+} 
+#Service .col-md-6 .btn{
+    width: 26%;
+    height: 7%;
+    color: white;
+    background-color:rgb(106, 227, 191);
+    border: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+    transition: ease .5s;
+}
+#Service .col-md-6 .btn:hover{
+    color: rgb(106, 227, 191);
+    background-color:white;
+    font-weight: 700;
+}
+
+#Service .card { 
+    background: #ffffff10;
+    -webkit-box-shadow:0px 0px 8px 15px #000000 ;
+    -moz-box-shadow:0px 0px 8px 15px #000000;
+    box-shadow:0px 0px 8px 15px #000000;
+}
+#Service .project { 
+    background: linear-gradient(to top , rgba(106, 227, 191, 0.307)  , #000000 88% );
+    -webkit-box-shadow:0px 0px 8px 15px #000000 ;
+    -moz-box-shadow:0px 0px 8px 15px #000000;
+    box-shadow:0px 0px 8px 15px #000000;
+}
+#Service .card img{
+    width: 75px;
+}
+#Service .card h5{
+    color: white;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+/* End Service */
+
+/* start About */
+#About .col-lg-5 img{
+    filter: opacity(0.7);
+}
+
+#About{
+    width: 100%;
+    background-color: #000000f1;
+    padding-top: 100px ;
+}
+#About h6{
+    color: rgb(106, 227, 191);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 13px;
+}
+#About h2{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    color: white;
+    font-size: 48px;
+    word-spacing: 7px;
+    position: relative;
+    text-transform: capitalize;
+}
+#About h2 b::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(106, 227, 191);
+    height: 4px;
+    bottom: -12px;
+    left: 0;
+    right: 0px;
+    width: 80px;
+}
+#About h2 span{
+    color: rgb(106, 227, 191);
+}
+#About p{
+    color: rgba(240, 248, 255, 0.667);
+}
+
+#About .card{
+    box-shadow: none;
+    border:none;
+    background-color: #00000000;
+}
+#About .card-title{
+    color: white;
+}
+
+/* End About */
+
+/* Start patchier */
+
+#patchier{
+    background: linear-gradient(to right, rgb(25, 87, 68), #0000006d 99%);
+} 
+
+#back {
+    background-image: url(1.jpg);
+    background-position-y: 30%;
+    background-size: cover;
+}
+@media(max-width: 601px){
+    #back {
+        background-repeat: round;
+    }
+}
+
+#patchier img{
+    width: 20%;
+    padding-top: 25px;
+}
+#patchier h2{
+    color: rgb(106, 227, 191);
+    font-size: 40px;
+    font-family: system-ui;
+    font-weight: 900;
+    padding-top: 10px;
+}
+#patchier h2 span{
+    color: white;
+}
+#patchier h4{
+    font-size: 16px;
+    padding-bottom: 40px;
+    color: white;
+}
+/* End patchier */
+
+/* Start Pages */
+#Pages{
+    padding: 100px 0px;
+    background-color: #000000;
+    width: 100%;
+}
+#Pages h6{
+    color: rgb(106, 227, 191);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'FontAwesome';
+    font-size: 10px;
+}
+#Pages h2{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    color: white;
+    font-size: 50px;
+    word-spacing: 7px;
+    position: relative;
+    text-transform: capitalize;
+}
+#Pages h2 b::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(106, 227, 191);
+    height: 3px;
+    bottom: -12px;
+    left: 0;
+    right: 0px;
+    width: 90px;
+}
+#Pages h2 span{
+    color: rgb(106, 227, 191);
+}
+#Pages p{
+    color: rgba(255, 255, 255, 0.608);
+}
+#Pages h5 span{
+    color: white;
+    font-size: 16px;
+}
+
+/* End Pages */
+
+/* Start patchier */
+
+#patchier-2{
+    padding: 50px 0px;
+    background: linear-gradient(to left, rgb(25, 87, 68), #0000006d 99%);
+} 
+
+#back-2 {
+    background-image: url(side-view-portrait-of-a-woman-with-make-up-CTUMAUJ.jpg);
+    background-position-y: 30%;
+    background-size: cover;
+}
+@media(max-width: 601px){
+    #back-2 {
+        background-repeat: round;
+    }
+}
+#patchier-2 img {
+    width: 90%;
+    filter: grayscale(1);
+    flex-grow: 1;
+    margin-left: 140px;
+}
+@media(min-width: 576px)  and (max-width: 991px) {
+    #patchier-2 img {
+        width: 90%;
+        filter: grayscale(1);
+        flex-grow: 1;
+        margin-left: 9px;
+        margin-top: 21px;
+    }
+}
+@media(min-width: 360px)  and (max-width:576px) {
+    #patchier-2 img {
+        width: 30%;
+        filter: grayscale(1);
+        margin-left: 5px;
+        margin-top: 30px;
+    }
+}
+
+/* End patchier */
+
+/* start Choose */
+#Choose{
+    background-color: #000000;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+#Choose h6{
+    color: rgb(106, 227, 191);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#Choose h2{
+    color: white;
+    font-weight: 900;
+    font-size: 45px;
+    text-transform: capitalize;
+}
+#Choose h2 span{
+    color: rgb(106, 227, 191);
+}
+#Choose .imges img{
+    width: 90%;
+    padding-top: 80px;
+}
+#Choose .imges{
+    position: relative;
+}
+#Choose h5 i {
+    position: absolute;
+    right: 45%;
+    top: 50%;
+    color: white;
+    opacity: .4;
+    cursor: pointer;
+}
+#Choose .imges h5{
+    font-size: 100px;
+}
+#Choose p{
+    color: rgba(255, 255, 255, 0.485);
+    padding-top: 100px;
+}
+#Choose span{
+    margin-left: 15px;
+    color: white;
+    text-transform: capitalize;
+}
+/* End Choose */
+
+/* Start Team */
+@media(max-width:767px){
+    #Team .col-lg-6 .card{
+        text-align: center;
+    } 
+}
+#Team{
+    padding: 100px 0px;
+    width: 100%;
+    background: linear-gradient(to right, #000000b0 90% , #0000 );
+}
+#big-Team{
+    background-image: url(Bg-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#Team .col-12 h6{
+    color: rgb(106, 227, 191);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#Team .col-12 h2{
+    color: white;
+    font-size: 40px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    position: relative;
+    text-transform: capitalize;
+    word-spacing: 2px;
+}
+#Team .col-12 h2 span{
+    color: rgb(106, 227, 191);
+}
+#Team .col-12 b::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(106, 227, 191);
+    height: 3px;
+    bottom: -15px;
+    right: 46%;
+    width: 10%;
+}
+#Team .col-12 p{
+    color: rgba(240, 248, 255, 0.468);
+    padding: 20px 0;
+}
+
+#Team .col-lg-6 .card{
+    background-color: #9fa6b225;
+}
+#Team .col-lg-6 img{
+    filter: grayscale(1);
+}
+#Team .col-lg-6 h5{
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+#Team .col-lg-6 img{
+    height: 200px;
+}
+#Team .col-lg-6  h3{
+    padding-top: 10px;
+    color: rgb(106, 227, 191) ;
+    font-size: 14px;
+}
+#Team .col-lg-6 p{
+    color: rgba(240, 248, 255, 0.178) ;
+}
+#Team .col-lg-6 i{
+    margin-left: 15px;
+}
+/* end Team */
+
+/* start Portfolio */
+#Portfolio{
+    background-color: #000000;
+    width: 100%;
+    padding: 100px 0;
+}
+#Portfolio h6{
+    color:rgb(106, 227, 191) ;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+#Portfolio h2{
+    font-size: 40px;
+    color: white;
+    font-weight: 800;
+    text-transform: capitalize;
+    position: relative;
+}
+#Portfolio span{
+    color: rgb(106, 227, 191);
+}
+
+#Portfolio b::before{
+    content:"";
+    position: absolute;
+    background-color: rgb(106, 227, 191);
+    height: 2px;
+    bottom: -15px;
+    right: 46%;
+    width: 8%;
+}
+#Portfolio p{
+    color: rgba(240, 248, 255, 0.468);
+    padding: 20px 0;
+}
+#Portfolio img{
+    width: 98%;
+}
+
+/* End Portfolio */
+
+/* start Testimonials */
+#Testimonials{
+    padding:100px 0px;
+    width: 100%;
+    background-color: #000000a3;
+}
+#Testimonials-big{
+    background-image: url(adadad.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#Testimonials h6{
+    color: rgb(106, 227, 191) ;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+#Testimonials h2{
+    font-size: 40px;
+    color: white;
+    font-weight: 900;
+    text-transform: capitalize;
+    position: relative;
+    word-spacing:1px;
+}
+#Testimonials span{
+    color: rgb(106, 227, 191);
+}
+#Testimonials b::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(106, 227, 191);
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: -17px;
+    width: 17%;
+}
+#Testimonials p{
+    color:  rgba(240, 248, 255, 0.552);
+}
+#Testimonials button{
+    background-color: rgb(106 227 191 / 78%);
+    color: white;
+    height: 14%;
+    width: 46%;
+    transition:  ease .5s;
+    text-transform:uppercase;
+    border: none;
+}
+#Testimonials button:hover{
+    color: rgb(106, 227, 191);
+    background-color: white;
+    font-weight: 700;
+}   
+
+#Testimonials .text-showdo{
+    box-shadow: 0px 0px 100px 240px rgb(32 32 32 / 79%) inset;
+    margin-top: 40px;
+}
+#Testimonials .text-showdo p{
+    padding: 40px;
+    color: #eef7fea8;
+}
+#Testimonials .text-showdo .img-fluid{
+    width: 25%;
+    border-radius: 50%
+}
+#Testimonials .text h4{
+    color: white;
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 19px;
+}
+#Testimonials .text h5{
+    color: rgb(106, 227, 191);
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 16px;
+}
+#Testimonials .text {
+    margin-top: 20px;
+}
+#Testimonials .imge{
+    display: flex;
+}
+#Testimonials .poto {
+    float: right;
+    width: 17%;
+    margin-top: -70px;
+}
+/* End Testimonials */
+
+/* start Blog */
+#Blog{
+    padding: 100px 0;
+    background-color: #000000;
+    width: 100%;
+}
+#Blog .col-12 h6{
+    color: rgb(106, 227, 191);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#Blog .col-12 h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: capitalize;
+    position: relative;
+}
+#Blog .col-12 h2 span{
+    color:  rgb(106, 227, 191);
+}
+#Blog .col-12 b::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(106, 227, 191);
+    height: 2px;
+    right: 46%;
+    bottom: -20px;
+    width: 7%;
+}
+#Blog .col-12 p{
+    padding-top: 30px;
+    color: rgba(255, 255, 255, 0.488);
+}
+
+#Blog .col-lg-4 img{
+    margin-top: 40px;
+}
+#Blog .col-lg-4 h3{
+    color:  rgb(106, 227, 191);;
+    text-transform: capitalize;
+    font-size: 21px;
+    padding-top: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#Blog .col-lg-4 p{
+    color: rgba(255, 255, 255, 0.551);
+}
+
+#Blog .col-lg-4 h5{
+    color: white;
+}
+#Blog .col-lg-4 b{
+    margin-left: 10px;
+    font-size: 18px;
+}
+#Blog .col-lg-4 span{
+float: right;
+}
+#Blog .col-lg-4 i{
+    color:  rgb(106, 227, 191);;
+}
+/* * End Blog */ 
+
+/* start Contact */
+
+#Contact{
+    padding: 100px 0;
+    background-image: radial-gradient(circle at 50% 44%, rgb(22 118 90 / 58%) -60%, rgb(0 0 0 / 95%) 52%, rgb(0 0 0 / 93%) 100%);
+}
+#big-Contact{
+    background-image: url(OIP.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#Contact form {
+    background-color: #000000a6;
+    height: 98%;
+}
+
+#Contact form label{
+    color:  rgb(106, 227, 191);
+}
+#Contact .mb-4{
+border-color:  rgb(106, 227, 191);
+background-color: #0000009a;
+}
+#Contact .form-control{
+    border:  rgba(106, 227, 191, 0.807) solid 2px;
+}
+#Contact button{
+    background:  rgb(106, 227, 191) !important;
+    color: white !important;
+}
+#Contact h6{
+    text-transform: uppercase;
+    color:  rgb(106, 227, 191);
+    letter-spacing: 3px;
+}
+#Contact h2{
+    color: white;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+#Contact h2 span{
+    color:  rgb(106, 227, 191);
+}
+#Contact p{
+    color: rgb(255 255 255 / 57%);
+}
+#Contact  .text h3{
+    color: white;
+}
+#Contact  .text h4{
+    color:  rgb(106, 227, 191);
+    font-size: 15px;
+}
+#Contact  .text{
+    margin-left: 30px;
+}
+#Contact .icon{
+    display: flex;
+}
+#Contact i{
+    font-size: 40px;
+    color: rgb(106, 227, 191);
+}
+/* End Contact */
+
+/* Start Footer */
+#footer{
+    padding: 100px 0px;
+    background: radial-gradient(circle at 50% 59%, rgb(106 227 191 / 25%) -22%, rgba(0, 0, 0, 1) 52%, rgba(0, 0, 0, 1) 100%);
+}
+#big-footer{
+    background-color: #000000;
+}
+#footer h2{
+    color: rgb(106, 227, 191);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    position: relative;
+    font-size: 45px;
+    padding-top: 50px;
+}
+#footer h6{
+    color: white;
+    font-size: 7px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    padding-bottom: 35px;
+    margin-top: -10px;
+}
+#footer a{
+    color: rgb(106, 227, 191);
+    font-weight: 700;
+    margin-left: 35px;
+    text-transform :capitalize;
+    padding-top: 20px;
+    text-decoration: none;
+}
+#footer h5{
+    color: white;
+    font-size: 14px;
+    padding-top: 10px;
+    line-height: 22px;
+}
+
+#footer i{
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+
+
+/* End Footer */
